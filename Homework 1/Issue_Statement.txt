@@ -1,0 +1,1 @@
+Everything technically runs, but there is no weight update in the right direction happenig. The losses seem to change randomly. I am not sure where the problem is exactly, but I suspect it to be connected to the minibatches in one way or another. The minibatches confused me in regards to the calculations, so I suspect the issue to be somehow connected to that.
