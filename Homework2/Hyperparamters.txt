@@ -1,0 +1,15 @@
+I started off training with the sigmoid activation function, a learning rate of 0.001, batchsize of 64 and, 10 epochs and 2 hidden layers. 
+Compared to the hyperparameters used in the lecture, the training process is much slower (Accuracy: 0.6644). This is mainly due to the use of the sigmoid activation function.
+Compared to Relu, as used in the lecture, the output is much lower and therefore all following apllications like the errors and gradients happen in smaller increments. 
+For a well studied dataset as MNIST, Relu therefore makes more sense.
+When I for once increased the epochs to 100 (0.9017), in another trial increased the learning rate to 0.01(0.9014) and in another trial changed the activation function to Relu (), the accuracy at the end was higher.
+In general increasing the epochs will improve performance on the training set. With unstudied data one has to watch out for overfitting tho. 
+Also the computing time a lot of the time is in no relation to the accuracy increase. So one should rather change other hyperparamters 
+Having a learing rate that is to high can lead to missing the "sweet spot". 
+In the attempt of creating the smallest network possible I aimed for an accuracy of 0.9, since it as an easy to achieve accuracy for this dataset.  
+Smaller models gnerally have the advantage, of beeing faster, easier to tweek and understand.
+One has to keep in mind tho that a lot of dataset, will not be as easy to classify as it is with the MNISt dataset.
+Looking at the results above it seem to make sense to use Relu as the activation function as a starting point. Also toying with the learning rate, the batch size and the epochs. 
+After some variations I ended up having just the softmax outputlayer left. With a learning rate of 0.1, 5 epochs, batchsize of 100 a accuracy of 0.9106 was achieved.
+So as it turns out you do not need much for the MNISt dataset. In general i would assume it is not the best practice to use those hyperparameters.
+It can make sense to explore a bit, but eventually, you probably will not end up with something similar.
